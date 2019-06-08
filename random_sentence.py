@@ -1,5 +1,6 @@
 import random
 import words
+import time
 
 def silly_string(nouns, verbs, templates):
     # Choose a random template.
@@ -28,5 +29,7 @@ def silly_string(nouns, verbs, templates):
     return output
 
 if __name__ == '__main__':
-    print(silly_string(words.nouns, words.verbs,
+    while True:
+        print(silly_string(words.nouns, words.verbs,
         words.templates))
+        time.sleep(2)
